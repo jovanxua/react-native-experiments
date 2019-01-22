@@ -8,10 +8,9 @@ import {
 import {
   AnimatedBackground,
   PulseIndicator,
+  RollingBall,
 } from './components';
 
 export default () => (
-  <AnimatedBackground>
-    <PulseIndicator />
-  </AnimatedBackground>
+  <RollingBall />
 )
