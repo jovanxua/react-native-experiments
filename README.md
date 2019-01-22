@@ -1,8 +1,8 @@
 # react-native-experiments
 A personal compilation of React Native UI Challenges and Experiments.
-I just do this during my leisure time.
 
 I will start from the easiest experiments to complex ones.
+Will try to add some comments in code soon.
 
 ## Let's begin!
 
