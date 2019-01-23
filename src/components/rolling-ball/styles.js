@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
 
   contBounceArea: {
     flex: 0.8,
-    backgroundColor: '#FFF',
   },
 
   contFloorArea: {

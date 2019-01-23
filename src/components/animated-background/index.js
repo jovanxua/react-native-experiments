@@ -37,11 +37,9 @@ class AnimatedBackground extends Component {
     return(
       <Animated.View style={{
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
         backgroundColor: color
       }}>
-        <SafeAreaView>
+        <SafeAreaView style={{ backgroundColor: 'transparent' }}>
           { children }
         </SafeAreaView>
       </Animated.View>
