@@ -13,6 +13,7 @@ import {
   AnimatedList,
   Header,
   AnimatedGesture,
+  TopDownAnimation,
 } from './components';
 
 const compList = [
@@ -59,14 +60,15 @@ class App extends Component {
         />
       );
 
-    return (
+    return <TopDownAnimation />;
+    /* return (
       <View style={{ flex: 1, backgroundColor: '#2c3e50' }}>
         <SafeAreaView style={{ flex: 1 }}>
         { activeItem && <Header title={activeItem.label} /> }
           { activeComponent }
         </SafeAreaView>
       </View>
-    )
+    ) */
   }
 }
 
