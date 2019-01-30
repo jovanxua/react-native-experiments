@@ -19,12 +19,12 @@ class TopDownAnimation extends Component {
       Animated.sequence([
         Animated.timing(this.state.animatedValue, {
           toValue: 1,
-          duration: 5000,
+          duration: 2000,
           useNativeDriver: true,
         }),
         Animated.timing(this.state.animatedValue, {
           toValue: 0,
-          duration: 5000,
+          duration: 2000,
           useNativeDriver: true,
         }),
       ]),

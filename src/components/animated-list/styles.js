@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
 
   listStyle: {
     flex: 1,
+    marginTop: 30,
   },
 
   itemPlaceholder: {

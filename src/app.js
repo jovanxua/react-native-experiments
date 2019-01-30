@@ -37,6 +37,11 @@ const compList = [
     label: 'Animated Gesture',
     component: <AnimatedGesture />
   },
+  {
+    id: 'up-down-animation',
+    label: 'Up-Down Animation',
+    component: <TopDownAnimation />
+  },
 ]
 class App extends Component {
   constructor(props){
@@ -60,15 +65,12 @@ class App extends Component {
         />
       );
 
-    return <TopDownAnimation />;
-    /* return (
+    return (
       <View style={{ flex: 1, backgroundColor: '#2c3e50' }}>
-        <SafeAreaView style={{ flex: 1 }}>
         { activeItem && <Header title={activeItem.label} /> }
-          { activeComponent }
-        </SafeAreaView>
+        { activeComponent }
       </View>
-    ) */
+    )
   }
 }
 
