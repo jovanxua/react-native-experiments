@@ -19,23 +19,17 @@ class AnimatedGesture extends Component {
       onStartShouldSetPanResponderCapture: (evt, gestureState) => true,
       onMoveShouldSetPanResponder: (evt, gestureState) => true,
       onMoveShouldSetPanResponderCapture: (evt, gestureState) => true,
-
       onPanResponderGrant: (evt, gestureState) => {
         objectPosition.setOffset(objectPosition.__getValue());
         objectPosition.setValue({x: 0, y: 0});
       },
       onPanResponderMove: Animated.event([
         null,
-        {
-          dy: objectPosition.y,
-          dx: objectPosition.x,
-        }
+        { dy: objectPosition.y, dx: objectPosition.x }
       ]),
-
       onPanResponderTerminationRequest: (evt, gestureState) => {
         // unhighlight object
       },
-  
       onPanResponderRelease: (evt, gestureState) => {
         // The user has released all touches while this view is the
         // responder. This typically means a gesture has succeeded
@@ -50,10 +44,7 @@ class AnimatedGesture extends Component {
       },
     });
 
-    this.state = {
-      objectPosition,
-      isActive: false,
-    }
+    this.state = { objectPosition };
   }
 
   render() {
@@ -74,8 +65,8 @@ class AnimatedGesture extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 64,
   },
+
   circle: {
     backgroundColor: 'blue',
     width: CIRCLE_SIZE,
